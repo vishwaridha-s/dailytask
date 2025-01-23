@@ -36,7 +36,7 @@ const Header = () => {
           <ul>
             {products.map((product) => (
               <li key={product.id}>
-                <strong>{product.title}</strong> {/* Display the title of each todo as "product" */}
+                <strong>{product.title}</strong>
               </li>
             ))}
           </ul>
