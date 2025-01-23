@@ -7,24 +7,23 @@ const Header = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Fetch products using Axios (fetching all todos as products)
     axios
-      .get("https://jsonplaceholder.typicode.com/todos") // Fetch a list of todos
+      .get("https://jsonplaceholder.typicode.com/todos")
       .then((response) => {
-        setProducts(response.data); // Set the products in state (using todos as products)
-        return fetch('https://jsonplaceholder.typicode.com/todos/1'); // Fetch a single todo
+        setProducts(response.data);
+        return fetch('https://jsonplaceholder.typicode.com/todos/1');
       })
-      .then(response => response.json()) // Convert the response to JSON using fetch
+      .then(response => response.json())
       .then(json => {
-        setTodo(json); // Set the todo data in state
-        setLoading(false); // Stop the loading state
-        console.log(json); // Log the fetched todo to the console
+        setTodo(json);
+        setLoading(false);
+        console.log(json);
       })
       .catch((error) => {
         console.error("Error fetching data:", error);
-        setLoading(false); // Stop the loading state even if there's an error
+        setLoading(false);
       });
-  }, []); // Runs only once when the component mounts
+  }, []);
 
   return (
     <div>
