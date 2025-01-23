@@ -1,0 +1,29 @@
+.app {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.video-container {
+  margin: 20px auto;
+  width: 640px;
+  height: 360px;
+  background-color: #000;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+}
+
+.pause-button {
+  background-color: #ff4500;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.pause-button:hover {
+  background-color: #ff6347;
+}
