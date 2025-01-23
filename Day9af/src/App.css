@@ -1,0 +1,127 @@
+/* General Styling */
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.content {
+  text-align: center;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Input Section */
+.input-section {
+  margin-bottom: 30px;
+}
+
+.input-box {
+  padding: 12px 15px;
+  font-size: 18px;
+  border: 2px solid #3498db;
+  border-radius: 5px;
+  outline: none;
+  width: 70%;
+  transition: 0.3s;
+}
+
+.input-box:focus {
+  border-color: #2ecc71;
+  box-shadow: 0 0 5px #2ecc71;
+}
+
+.focus-btn {
+  margin-top: 10px;
+  background: #e67e22;
+  color: white;
+  font-size: 16px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.focus-btn:hover {
+  background: #d35400;
+}
+
+/* Timer Section */
+.timer-section {
+  margin-top: 20px;
+}
+
+.timer {
+  font-size: 48px;
+  font-weight: bold;
+  color: #34495e;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+.time-up {
+  color: #e74c3c;
+  animation: blink 1s infinite;
+}
+
+/* Blinking animation for "Time's Up!" */
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* Buttons */
+.button-group .btn {
+  margin: 5px;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  transition: 0.3s;
+}
+
+.start-btn {
+  background: #2ecc71;
+}
+
+.start-btn:hover {
+  background: #27ae60;
+}
+
+.stop-btn {
+  background: #e74c3c;
+}
+
+.stop-btn:hover {
+  background: #c0392b;
+}
+
+.reset-btn {
+  background: #3498db;
+}
+
+.reset-btn:hover {
+  background: #2980b9;
+}
